@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.big-div{
+    background-color: rgb(172, 182, 190);
+}
+    /* NAV-BAR KISMI*/
+a {
+    text-decoration: none;
+}
+nav {
+    width: 100%; 
+    background-color: #5f5959; 
+    
+}
+ul {
+
+    display: flex; 
+    list-style-type: none;
+}
+ul li a {
+    display: inline-block; 
+    padding: 1rem;
+    color: aliceblue;
+}
+ul li a:hover {
+    background-color: rgb(106, 147, 179);
+    color: #e33a18;
+    border-radius: 45%;
+}
+.sag {
+  margin-left: auto; 
+    display: inline-flex;
+}
+
+
+
+
+    /* FLİP-BOX KISMI*/
+    .kapsayici{                    
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+ .flip-card {             
+   background-color: transparent;
+   width: 300px;
+   height: 300px;
+   perspective: 1000px;
+   
+ }
+ .flip-card-ic {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.6s;
+   transform-style: preserve-3d;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   border-radius: 30px; 
+ }         
+ .flip-card:hover .flip-card-ic {
+   transform: rotateY(180deg);
+ }
+ .flip-card-on, .flip-card-arka {
+    border-radius: 10%;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+ }
+ .flip-card-on {
+   background-image: url(https://edumag.net/wp-content/uploads/2017/11/diy-it-department-managed-it.jpg);
+   color: rgb(249, 249, 249);
+   background-size: 300px;
+ }
+ .flip-card-arka {
+    
+   background-color:rgb(172, 182, 190);
+   color: rgb(255, 255, 255);
+   transform: rotateY(180deg);
+   
+ }
+
+ /*FLİP-CARD-SOL*/
+ .kapsayici{                    
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+ .flip-sol {             
+   background-color: transparent;
+   width: 300px;
+   height: 300px;
+   perspective: 1000px;
+   
+ }
+ .flip-sol-ic {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.6s;
+   transform-style: preserve-3d;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   border-radius: 30px; 
+ }         
+ .flip-sol:hover .flip-sol-ic {
+   transform: rotateY(180deg);
+ }
+ .flip-sol-on, .flip-sol-arka {
+    border-radius: 10%;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+ }
+ .flip-sol-on {
+   background-image: url(https://img.freepik.com/premium-vector/vector-champions-cup-icon_149267-2494.jpg?w=2000);
+   color: rgb(123, 117, 117);
+   background-size: 300px;
+ }
+ .flip-sol-arka {
+    
+   background-color:rgb(172, 182, 190);
+   color: rgb(255, 255, 255);
+   transform: rotateY(180deg);
+   
+ }
+ /*FLİP-CARD-SAĞ*/
+ .kapsayici{                    
+        margin-top: 1rem;
+        display: flex;
+        justify-content: center;
+    }
+ .flip-sag {             
+   background-color: transparent;
+   width: 300px;
+   height: 300px;
+   perspective: 1000px;
+   
+ }
+ .flip-sag-ic {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.6s;
+   transform-style: preserve-3d;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+   border-radius: 30px; 
+ }         
+ .flip-sag:hover .flip-sag-ic {
+   transform: rotateY(180deg);
+ }
+ .flip-sag-on, .flip-sag-arka {
+    border-radius: 10%;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   -webkit-backface-visibility: hidden;
+   backface-visibility: hidden;
+ }
+ .flip-sag-on {
+   background-image: url(https://image.shutterstock.com/image-vector/flat-sand-clock-icon-260nw-198345407.jpg);
+   color: rgb(123, 117, 117);
+   background-size: 300px;
+ }
+ .flip-sag-arka {
+    
+   background-color:rgb(172, 182, 190);
+   color: rgb(255, 255, 255);
+   transform: rotateY(180deg);
+   
+ }
+
+
+ /* FOOTER KISMI*/
+ .footer {
+    width: 100%;
+    background-color:#625b5b;
+    margin-top: 5rem;
+}
+
+.footer li {
+    list-style: none;
+}
+
+.footer .container-flex {
+    display: flex; padding: 1rem;
+}
+
+.sosyal-medya {
+    align-self: center; 
+    text-align: center; 
+}
+.sosyal-medya li { 
+    display: inline-block; 
+    padding: 10px;
+}
+.sosyal-medya li i { 
+    color: #d8d8d8;
+}
+
+.footer .navigasyon, .sosyal-medya {
+     flex-grow: 1;
+    }
+.footer .navigasyon { 
+    border-right: 3px solid white; 
+}
+.footer .navigasyon li a { 
+    color: #eeeeee;  
+    font-size: large;
+}
+.footer .navigasyon ul { 
+    justify-content: center;
+}
+
+.birsey{
+    border-radius: 10%;
+    width: 250px;
+    height: 250px;
+    background-image: url(https://yapayakademi.com/wp-content/uploads/2021/01/thumbnail.jpg);
+    border: 5px solid rgb(104, 95, 95);
+}
+
+h3{
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.yer{
+    display: flex;
+    justify-content: space-evenly;
+    height: 1%;
+    margin-top: 3rem;
+    text-align: center;
+    
+} 
+      
+.kapsayici2{
+
+    display: flex;
+    justify-content: center;
+    
+}
+
+.yazi2{
+    border-radius: 10%;
+    width: 250px;
+    height: 250px;
+    background-image: url(https://digitalage.com.tr/wp-content/uploads/2016/11/kariyer-yolculuğu.jpg);
+    border: 5px solid rgb(104, 95, 95);
+   
+}
+.yazi3{
+    border-radius: 10%;
+    width: 350px;
+    height: 250px;
+    background-image: url(https://images.cointelegraph.com/cdn-cgi/image/format=auto,onerror=redirect,quality=90,width=1434/https://s3.cointelegraph.com/storage/uploads/view/37317644faa26370eac27ea47570426a.jpg);
+    background-size: 110%;
+    background-repeat: no-repeat;   
+    border: 5px solid rgb(104, 95, 95);
+   
+}
+.kapsayici4{
+    display: flex;
+    justify-content: center;
+}
+.kapsayici3{
+
+    display: flex;
+    justify-content: center;
+
+}
+.aciklama{     
+    display: flex;
+    justify-content: space-between;
+    height: 1%;
+    margin-top: 3rem;
+    text-align: center;           
+    
+}
+.right-side{            
+    display: flex;
+    
+    width: 150px;
+    height: 100%;
+    background-color: red;
+}
+.yazi{
+    display: flex;
+    justify-content: space-between;
+    height: 1%;
+    margin-top: 3rem;
+    text-align: center;           
+    
+}
+.end-footer {
+    background-color: #030303;
+    color: white;
+    text-align: center;   
+    height: 35px;
+}
+
+
+ /*RESPONSİVE BÖLÜMÜ*/
+        /* NAV */
+        @media screen and (max-width: 530px) {       
+            nav ul { flex-direction: column;}
+            .right { margin-left: 0; display: block;}
+            .content { flex-direction: column;}
+            .content .box {
+              width: 100%;
+            }      
+            .footer .container-flex { flex-direction: column;}
+            .footer .container-flex .navigasyon { border-right: none;}
+            }                
+        @media screen and (max-width: 280px) {        
+            .footer .navigasyon { text-align: center;}
+            .footer .navigasyon ul { flex-direction: column; justify-content: flex-start;}
+            .footer .sosyal-medya {
+              width: 100%;
+              border-top: 2px solid white;
+              margin-top: 11px;
+            }
+            .footer .sosyal-medya li { padding: 20px;}
+            }
+    
+            @media screen and (min-width: 1000px){    
+                  .aciklama {
+                    
+                    margin: 0 auto;
+                    width: 30%;
+                    
+                } 
+                .yazi{
+                    
+                    margin: 0 auto;
+                    width: 30%;
+                    
+                }       
+            }
+            @media screen and (max-width:830px) {
+                .yer{
+                    justify-content: center;
+                    flex-direction: column;
+                }
+                
+              }
