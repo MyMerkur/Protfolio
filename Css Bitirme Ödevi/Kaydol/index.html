@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaydol</title>
+    <link rel="stylesheet" href="../Kaydol/index.css">
+</head>
+<body>
+    <div class="nav-bar">      
+        <nav>
+            <ul>
+                <li><a href="../Anasayfa/index.html">Anasayfa</a></li>
+                <li><a href="../Hakkımda/index2.html">Hakkımda</a></li>
+                                
+                <div class="sag">
+                <li><a href="../Giriş Yap/index.html">Giriş Yap</a></li>
+                
+            </div>
+            </ul>
+        </nav>     
+    </div>    
+    <div class="container">
+        <h1>Projeleriniz veya Danışmalık İçin Lütfen Bir Profil Oluşturun</h1>
+<label for="isim">Adınız:</label>
+<input type="text" id="isim" placeholder="Adınızı Giriniz"> 
+     <div class="kapsa"> 
+<label for="soyisim">Soy Adınız:</label>
+<input type="text" id="s-isim" placeholder="Soyadınızı Giriniz"> 
+
+<label for="soyisim">Doğum Tarihiniz:</label>
+<input id="tarih" type="date" name="doğum tarihi">
+    
+<label for="tel">Telefon No:</label>
+<input id="tel" type="tel" name="telefon" placeholder="+90 xxx-xxx-xx-xx">
+    
+<label for="ülke">Ülke Seçiniz:</label>
+    
+<select id="ülke" name="ülke">
+<option value="turkiye">Türkiye</option>
+<option value="hollanda">Hollanda</option>
+<option value="almanya">Almanya</option>
+<option value="finlandiya">Finlandiya</option>
+</select>
+   
+<label for="email">Email:</label>
+<input id="mail" type="email" name="email" placeholder="E-Mail">
+   
+<label for="sifre">Şifreniz:</label>
+<input type="password" id="sifre" name="sifre" placeholder="*******">
+   
+<label for="sifre">Şifreniz Tekrar:</label>
+<input type="password" id="tsifre" name="sifre" placeholder="********">
+   
+
+<h2>Projenizin İhtiyaçlarını Seçiniz</h2>
+   
+<label id="battle">Frond-End Tasarım</label>
+<input id="sec" type="radio" name="oyun">
+   
+<label id="team">Back-End</label>
+<input id="sec2" type="radio" name="oyun">
+   
+
+<button onclick="gonder()" class="buton" type="submit" role="button">Gönder</button>   
+<button  class="buton" type="reset" role="button">Yenile</button>  
+
+</div> 
+
+
+    </div>
+    
+    <script>
+        
+
+        function gonder(){
+            let isim = document.getElementById("isim").value
+        let soyisim = document.getElementById("s-isim").value
+        let tarih = document.getElementById("tarih").value
+        let tel = document.getElementById("tel").value
+        let mail = document.getElementById("mail").value
+        let sifre = document.getElementById("sifre").value
+        let tsifre = document.getElementById("tsifre").value
+        let sec = document.getElementById("sec").value
+        let sec2 = document.getElementById("sec2").value
+
+            if(isim == "" ||soyisim == "" ||tarih == "" ||tel == "" ||mail == "" ||sifre == "" ||tsifre == "" ||sec == "" ||sec2 == "" ){
+                alert("Bilgilerinizi Lütfen Kontrol Ediniz.")
+            }else{
+                window.location.href = "../Hakkımda/index2.html";
+                alert("Başarılı bir şekilde kaydoldunuz. Ana sayfaya yönlendiriliyorsunuz.")
+            }
+        }
+    </script>
+</body>
+</html>
